@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 35vw;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button{
+    padding: 10px;
+}
+div{
+    width: 200px;
+    height:200px;
+    background-color: aqua;
+    transition: 1s ease;
+}
+.btn1:hover~div{
+    transform: translate(100px,50px);
+    background-color: lightsalmon;
+}
+.btn2:hover~div{
+    transform: scale(1.7,1.5);
+    background-color: lightseagreen;
+}
+.btn3:hover~div{
+    transform: skew(25deg,25deg);
+    background-color: lightsalmon;
+}
+.btn4:hover~div{
+    transform: rotate(360deg);
+    background-color: lightgreen;
+}
+.btn5:hover~div{
+    transform: rotate(500deg) scale(1.5);
+    background-color: lightslategray;
+}
